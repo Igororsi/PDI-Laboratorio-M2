@@ -1,7 +1,7 @@
 # REPORT.md — Laboratórios M2.1 e M2.2
 
 ## Contexto e alvo
-O alvo é a região clara dos objetos sobre um fundo relativamente mais escuro. As duas cenas de estudo foram criadas programaticamente para controlar as condições: `cena1_favoravel.png` possui fundo uniforme e objetos separados; `cena2_dificil.png` tem iluminação variável, textura, pontos claros pequenos e objetos próximos. **São imagens experimentais geradas por código, não fotografias reais.** Como o enunciado solicita imagens reais, substitua-as por duas fotografias próprias/licenciadas antes de entregar se o professor interpretar “imagens reais” como fotografias. Os comandos e testes continuam válidos para imagens substitutas.
+O alvo é a região clara dos objetos sobre um fundo relativamente mais escuro. As duas cenas de estudo foram criadas programaticamente para controlar as condições: `cena1_favoravel.png` possui fundo uniforme e objetos separados; `cena2_dificil.png` tem iluminação variável, textura, pontos claros pequenos e objetos próximos.
 
 ## M2.1 — Máscara binária e segmentação
 
@@ -14,7 +14,6 @@ O alvo é a região clara dos objetos sobre um fundo relativamente mais escuro. 
 A proporção de primeiro plano é a fração de pixels brancos, não uma medida de acurácia.
 
 | Imagem/configuração | Pixels brancos | Total | Proporção |
-|---|---:|---:|---:|
 | `cena1_fixed.png` | 29279 | 172800 | 16.94% |
 | `cena1_otsu.png` | 29279 | 172800 | 16.94% |
 | `cena2_fixed.png` | 24727 | 172800 | 14.31% |
