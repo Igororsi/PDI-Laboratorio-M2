@@ -1,0 +1,47 @@
+{
+  "project": "pdi_lab",
+  "version": "1.0.0",
+  "course": "Processamento de Imagens — Laboratórios M2.1 e M2.2",
+  "language": "Python 3",
+  "entrypoint": "pdi_lab.py",
+  "operations": {
+    "segment": {
+      "methods": [
+        "fixed",
+        "otsu",
+        "adaptive",
+        "hsv"
+      ],
+      "default_method": "fixed"
+    },
+    "analyze": {
+      "connectivity": [
+        4,
+        8
+      ],
+      "default_connectivity": 8,
+      "morphology_order": [
+        "opening",
+        "closing"
+      ]
+    }
+  },
+  "images": {
+    "target": "regiões claras em fundo mais escuro",
+    "inputs": [
+      "images/input/cena1_favoravel.png",
+      "images/input/cena2_dificil.png"
+    ]
+  },
+  "morphology": {
+    "shape": "ellipse",
+    "open_kernel": 3,
+    "close_kernel": 5,
+    "iterations": 1
+  },
+  "tests": [
+    "test_segment.py",
+    "test_analyze.py"
+  ],
+  "ai_usage": "Consultar AI_USAGE.md"
+}

@@ -1,0 +1,31 @@
+{
+  "input": "/mnt/data/pdi_lab/images/output/cena2_otsu.png",
+  "connectivity_selected": 8,
+  "connectivity_4_initial_components": 129,
+  "connectivity_8_initial_components": 128,
+  "initial_components_selected": 128,
+  "final_components_raw": 38,
+  "initial_components_kept": 6,
+  "final_components_kept": 6,
+  "initial_foreground_pixels": 24551,
+  "final_foreground_pixels": 24129,
+  "initial_foreground_ratio": 0.1420775462962963,
+  "final_foreground_ratio": 0.13963541666666668,
+  "min_area": 20,
+  "morphology": {
+    "order": [
+      "opening",
+      "closing"
+    ],
+    "shape": "ellipse",
+    "open_kernel": [
+      3,
+      3
+    ],
+    "close_kernel": [
+      5,
+      5
+    ],
+    "iterations": 1
+  }
+}
